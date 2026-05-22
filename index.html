@@ -97,7 +97,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
 @keyframes floatHint{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(-4px)}}
 
 /* STATS */
-.stats-strip{position:absolute;bottom:2rem;left:4rem;right:4rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden}
+.stats-strip{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden;margin-top:2.5rem}
 .stat-cell{background:rgba(10,10,10,0.92);padding:1.2rem 1.5rem;backdrop-filter:blur(8px);border-right:1px solid var(--border);transition:background .3s;cursor:default}
 .stat-cell:last-child{border-right:none}
 .stat-cell:hover{background:rgba(45,90,27,0.12)}
